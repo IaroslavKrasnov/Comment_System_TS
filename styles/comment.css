@@ -1,0 +1,270 @@
+﻿.comment_container {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.replies {
+  margin-left: 91px;
+}
+
+.comment_form {
+  margin-bottom: 28px;
+}
+
+.comment_form > form > div:first-child ~ div:not(div:last-child) > div:last-child {
+  right: 0%;
+}
+  
+.comment_form > form > div:last-child {
+  display: flex;
+}
+
+.comment_form > form > div:last-child > button {
+  padding: 20px 60px;
+}
+
+.comment_form > form > div:last-child > button ~ button {
+  margin-left: 30px;
+}
+
+.avatar {
+  margin-right: 30px;
+  width: 61px;
+  height: 61px;
+  border-radius: 50px;
+}
+
+.comment_info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.comment_info > p:first-child {
+  font-weight: 500;
+  line-height: 22px;
+  color: #122AC0;
+  margin-right: 15px;
+}
+
+.comment_info > p:last-child {
+  align-self: center;
+  color: #000000;
+  opacity: 0.4;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.parent {
+  display: flex;
+  gap: 13px;
+  margin-right: 15px;
+}
+
+.parent > p {
+  color: #000000;
+  opacity: 0.4;
+  font-size: 18px;
+  line-height: 22px;;
+}
+
+.parent_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.comment_panel {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.reply_btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 7px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.favorite_btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 7px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 30px;
+}
+
+.favorite_btn > img {
+  width: 22px;
+  height: 22px;
+}
+
+.vote_system {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vote_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon_plus {
+  width: 12px;
+  height: 22px;
+}
+
+.icon_minus {
+  width: 9px;
+  height: 22px;
+}
+
+.positive_rating {
+  font-weight: 500;
+  color: #8AC540;
+}
+
+.negative_rating {
+  font-weight: 500;
+  color: #FF0000;
+}
+
+
+@media (max-width: 1380px) {
+  .comment_form > form {
+    flex-wrap: wrap;
+  }
+  
+  .comment_form > form > div:first-child ~ div:not(div:last-child) {
+    margin-right: 0;
+  }
+  
+  .comment_form > form > div:first-child ~ div:not(div:last-child) > textarea {
+    max-width: 100%;
+  }
+  
+  .comment_form > form > div:first-child ~ div:not(div:last-child) > div:last-child {
+    right: 0;
+  }
+  
+  .comment_form > form > div:first-child ~ div:not(div:last-child) > div:last-child > p:first-child {
+    order: 1;
+    margin: 0 0 0 30px;
+  }
+  
+  .comment_form > form > div:last-child {
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .comment_container {
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .comment_inner > .comment_info {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    position: absolute;
+    top: 20px;
+    left: 91px;
+  }
+  
+  .comment_inner > .comment_info > p:first-child {
+    margin-right: 29px;
+  }
+  
+  .comment_inner > .comment_info > .parent {
+    width: 100%;
+    order: 1;
+    margin: 10px 0 0 0;
+  }
+  
+  .comment_inner > p {
+    padding-top: 15px;
+  }
+  
+  .replies > div > .comment_container > .comment_inner > .comment_info {
+    top: 0;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .comment_container {
+    margin-bottom: 31px;
+  }
+  
+  .comment_form {
+    margin-bottom: 35px;
+  }
+  
+  .comment_form > form > div:last-child {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .comment_form > form > div:last-child > button {
+    width: 100%;
+  }
+  
+  .comment_form > form > div:last-child > button ~ button {
+    margin: 15px 0 0 0;
+  }
+  
+  .reply_btn {
+    margin-right: 15px;
+  }
+  
+  .favorite_btn {
+    margin-right: 15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .replies {
+    margin-left: 20px;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .comment_inner > p {
+    font-size: 16px;
+  }
+  
+  .comment_panel {
+    margin-top: 0;
+  }
+  
+  .comment_panel .vote_system {
+    flex-direction: column-reverse;
+    gap: 2px;
+  }
+  
+  .reply_btn {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .favorite_btn {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

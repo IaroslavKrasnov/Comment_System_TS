@@ -1,0 +1,30 @@
+﻿.info_block_small {
+  width: 487px;
+  height: 61px;
+  margin-bottom: 30px;
+  background-color: #D9D9D9;
+}
+  
+.info_block_small:nth-child(odd) {
+  margin-right: 48px;
+}
+
+﻿.info_block_small:nth-child(n + 7) {
+  margin-bottom: 40px;
+}
+
+.info_block_large {
+  width: 1022px;
+  height: 168px;
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 1410px) {
+  .info_block_small {
+    width: 100%;
+  }
+
+  .info_block_small:nth-child(odd) {
+    margin-right: 0;
+  }
+}

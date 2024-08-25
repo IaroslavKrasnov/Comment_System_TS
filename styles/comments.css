@@ -1,0 +1,15 @@
+﻿.load_animation {
+  animation: loadComments 1.4s ease-in-out;
+}
+
+@keyframes loadComments {
+  from {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

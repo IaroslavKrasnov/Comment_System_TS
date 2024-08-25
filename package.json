@@ -1,0 +1,18 @@
+{
+  "name": "commenting_system_pg-07",
+  "version": "1.0.0",
+  "description": "development of a commenting system for SkillFactory",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 5566"
+  },
+  "author": "ParamonovIvan",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "typescript": "^5.2.2"
+  }
+}
