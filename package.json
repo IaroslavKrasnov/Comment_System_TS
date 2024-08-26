@@ -1,7 +1,6 @@
 {
-  "name": "commenting_system_pg-07",
+  "name": "Commenting System",
   "version": "1.0.0",
-  "description": "development of a commenting system for SkillFactory",
   "main": "app.js",
   "scripts": {
     "start": "http-server -p 5566"
